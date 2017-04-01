@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FaceImageView.h
 //  FaceImageView
 //
 //  Created by tomfriwel on 01/04/2017.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@interface FaceImageView : UIImageView
 
 @end
-

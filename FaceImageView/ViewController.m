@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "FaceImageView.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) FaceImageView *imageView;
 
 @end
 
@@ -16,7 +18,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    UIImage *image = [UIImage imageNamed:@"test"];
+    self.imageView = [[FaceImageView alloc] initWithFrame:CGRectMake(0, 0, image.size.width, image.size.height)];
+    
+    self.scrollView.contentSize = image.size;
+    [self.scrollView addSubview:self.imageView];
+    [self.imageView setImage:image];
 }
 
 

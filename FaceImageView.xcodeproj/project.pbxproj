@@ -15,6 +15,8 @@
 		CFDD80CB1E8F83F500EA1FF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFDD80C91E8F83F500EA1FF9 /* LaunchScreen.storyboard */; };
 		CFDD80D61E8F83F500EA1FF9 /* FaceImageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDD80D51E8F83F500EA1FF9 /* FaceImageViewTests.m */; };
 		CFDD80E11E8F83F500EA1FF9 /* FaceImageViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDD80E01E8F83F500EA1FF9 /* FaceImageViewUITests.m */; };
+		CFDD80F01E8F844800EA1FF9 /* FaceImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDD80EF1E8F844800EA1FF9 /* FaceImageView.m */; };
+		CFDD80F31E8F852600EA1FF9 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDD80F21E8F852600EA1FF9 /* ImageIO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		CFDD80DC1E8F83F500EA1FF9 /* FaceImageViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceImageViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFDD80E01E8F83F500EA1FF9 /* FaceImageViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceImageViewUITests.m; sourceTree = "<group>"; };
 		CFDD80E21E8F83F500EA1FF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFDD80EE1E8F844800EA1FF9 /* FaceImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceImageView.h; sourceTree = "<group>"; };
+		CFDD80EF1E8F844800EA1FF9 /* FaceImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceImageView.m; sourceTree = "<group>"; };
+		CFDD80F21E8F852600EA1FF9 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFDD80F31E8F852600EA1FF9 /* ImageIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +91,7 @@
 				CFDD80D41E8F83F500EA1FF9 /* FaceImageViewTests */,
 				CFDD80DF1E8F83F500EA1FF9 /* FaceImageViewUITests */,
 				CFDD80B91E8F83F500EA1FF9 /* Products */,
+				CFDD80F11E8F852600EA1FF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +108,8 @@
 		CFDD80BA1E8F83F500EA1FF9 /* FaceImageView */ = {
 			isa = PBXGroup;
 			children = (
+				CFDD80EE1E8F844800EA1FF9 /* FaceImageView.h */,
+				CFDD80EF1E8F844800EA1FF9 /* FaceImageView.m */,
 				CFDD80BE1E8F83F500EA1FF9 /* AppDelegate.h */,
 				CFDD80BF1E8F83F500EA1FF9 /* AppDelegate.m */,
 				CFDD80C11E8F83F500EA1FF9 /* ViewController.h */,
@@ -138,6 +147,14 @@
 				CFDD80E21E8F83F500EA1FF9 /* Info.plist */,
 			);
 			path = FaceImageViewUITests;
+			sourceTree = "<group>";
+		};
+		CFDD80F11E8F852600EA1FF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFDD80F21E8F852600EA1FF9 /* ImageIO.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +296,7 @@
 				CFDD80C31E8F83F500EA1FF9 /* ViewController.m in Sources */,
 				CFDD80C01E8F83F500EA1FF9 /* AppDelegate.m in Sources */,
 				CFDD80BD1E8F83F500EA1FF9 /* main.m in Sources */,
+				CFDD80F01E8F844800EA1FF9 /* FaceImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
