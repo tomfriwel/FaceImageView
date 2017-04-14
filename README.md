@@ -1,2 +1,2 @@
 # FaceImageView
-Detect faces in image
+Detect faces in image using ImageIO.h
